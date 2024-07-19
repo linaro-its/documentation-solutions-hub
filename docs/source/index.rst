@@ -1,22 +1,11 @@
-Welcome to Lumache's documentation!
-===================================
+Linaro Solutions Hub
+====================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
+The Solutions Hub is Linaro's central site for technical information and solutions.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   using/index
