@@ -9,3 +9,5 @@ Contents
 .. toctree::
 
    using/index
+   submgmt/index
+   glossary/index

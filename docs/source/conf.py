@@ -25,11 +25,19 @@ intersphinx_mapping = {
 }
 intersphinx_disabled_domains = ['std']
 
-templates_path = ['_templates']
-
 # -- Options for HTML output
 
+# html_theme_path = ['_templates']
 html_theme = 'sphinx_rtd_theme'
+# html_file_suffix = ".tsx"
+
+# html_image_dir = "images"
+# html_image_path = "/images"
+
+# html_base_url = "/library/solutions_hub"
+# html_use_index = False
+# html_copy_source = False
+# html_domain_indices = False
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'

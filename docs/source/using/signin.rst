@@ -1,12 +1,4 @@
 Signing In
-==========
-
-Introduction
-------------
-
-When you first go to the Solutions Hub, you will see the public, or "not-signed-in" page. This shows a number of widgets of information but, to interact more with Solutions Hub, you will need to sign in.
-
-Signing In
 ----------
 
 To sign in, click on the avatar icon in the top-right of the page and click on **Sign In**:
@@ -26,3 +18,24 @@ At this screen, you have three choices:
 2. If you have a Google account, click on **Continue with Google** to authenticate with that account.
 
 3. Otherwise, click on **Sign up** to create a new account.
+
+If your organisation has an arrangement with Linaro, your browser will redirect to your company's authentication platform. Sign in there as usual. After that, you will be redirected back to the Solutions Hub.
+
+If you already have a Solutions Hub account, you will be prompted to enter your password:
+
+.. image:: signin-2.png
+    :scale: 50 %
+
+Enter your password and click on **Continue**. If your email address and password match the records, you will be taken back to the Solutions Hub.
+
+If you have mistyped your email address or want to use a different email address, click on **Edit** to go back to the previous screen.
+
+If you have forgotten your password, click on **Forgot password?**. You will be prompted to enter an email address:
+
+.. image:: forgotten-password.png
+    :scale: 50%
+
+Click on **Continue**.
+
+.. note:: You will only receive an email if the email address provided matches an account on the system.
+
