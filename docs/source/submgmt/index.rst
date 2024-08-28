@@ -1,7 +1,9 @@
 Subscription Management
 =======================
 
-If you are a subscription administrator, you can:
+.. toctree::
+    :maxdepth: 3
 
-* Assign a *seat* to a user
-* Remove a *seat* from a user
+    introduction
+    assign
+    remove

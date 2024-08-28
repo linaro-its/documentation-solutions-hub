@@ -1,13 +1,11 @@
 Linaro Solutions Hub
-====================
-
-The Solutions Hub is Linaro's central site for technical information and solutions.
-
-Contents
---------
+####################
 
 .. toctree::
+   :maxdepth: 1
 
+   overview
    using/index
    submgmt/index
+   cli
    glossary/index
