@@ -2,7 +2,7 @@ Linaro Solutions Hub
 ####################
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    overview
    using/index
