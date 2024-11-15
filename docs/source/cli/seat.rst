@@ -1,8 +1,8 @@
 seat commands
 =============
 
-``seat assign``
----------------
+``spire seat assign``
+---------------------
 
 Assigns a seat to a user from a seat definition.
 
@@ -34,8 +34,8 @@ For the other flags, if the command is being run in an interactive terminal and 
 
 The flag ``--json`` can be used to return the information from the assigned seat in a JSON structure.
 
-``seat remove``
----------------
+``spire seat remove``
+---------------------
 
 Removes a previously-assigned seat from a user, removing any associated permissions from them.
 
@@ -49,8 +49,8 @@ Flags:
 
 If the seat ID is not provided and the command is being run in an interactive terminal, the user will be guided through an interactive selection process.
 
-``seat add-permission``
------------------------
+``spire seat add-permission``
+-----------------------------
 
 Adds permissions to a user's existing seat.
 
@@ -70,4 +70,6 @@ Flags:
 
 If any of the flags are missing and the command is being run in an interactive terminal, the user will be guided through an interactive selection process.
 
-.. note:: It is not possible to mix a subscription ID and a resource ID as the target. Either a subscription ID must be specified, or one or more resource IDs must be specified.
+.. note:: If more than one target is specified, the targets must be resources.
+
+.. note:: It is not possible (or appropriate) to mix a subscription target with resource targets. If the seat already has permissions applied, the new permissions must have matching target types.

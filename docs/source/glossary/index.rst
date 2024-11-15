@@ -6,6 +6,13 @@ ORGANISATION
 
 A company that has been set up on the Solutions Hub. An organisation can have one or more *organisation administrators* who can create, update and delete users.
 
+PERSONAL ACCESS TOKEN
+---------------------
+
+Shortened to "PAT", this is a string that is used with a user's email address to authenticate without needing access to a web browser. This method of authenticating would typically be used in a CI environment.
+
+A user can only have one PAT at a time. Authenticating with a PAT typically results in a full authorization token, although some CLI tools may request a reduced token.
+
 RESOURCE
 --------
 

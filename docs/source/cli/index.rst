@@ -27,3 +27,4 @@ In the following documentation, each of the CLI commands is explained.
    auth
    org
    seat
+   user
