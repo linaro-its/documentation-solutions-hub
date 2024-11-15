@@ -7,5 +7,5 @@ Linaro Solutions Hub
    overview
    using/index
    submgmt/index
-   cli
+   cli/index
    glossary/index
