@@ -7,3 +7,4 @@ Subscription Management
     introduction
     assign
     remove
+    add_perms

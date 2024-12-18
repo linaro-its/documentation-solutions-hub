@@ -28,6 +28,6 @@ If the subscription ID has not been provided, the tool will list those subscript
 
 If the seat definition ID has not been provided, the tool will list the choices available for the chosen subscription. Use the left and right arrow keys to move through the list, press Return to select the desired seat definition or CTRL+C to exit. If a seat definition is selected, the tool displays the corresponding ID for reference.
 
-If the user ID has not been provided, the tool will list the users available in a paginated format. Press ``p`` for the previous page, ``n`` for the next page, Return to select a user or ``q`` to quit.
+If the user ID has not been provided, the tool will prompt for an email address to be typed in. As you start to type the email address, a list of matching users is displayed (limited to a maximum of 5 users). Once you can see the desired user, use cursor up/down keys to select the desired user and press Return.
 
-.. note:: The CLI tool will only list those users that you have permission to retrieve, typically those in the same organisation as yourself. In order to grant a seat to someone outside of your view, it is possible to specify their email address. If they exist as a user, the seat assignment can proceed.
+.. note:: The CLI tool will only list those users that you have permission to retrieve, typically those in the same organisation as yourself. There will be a future enhancement to allow you to specify users by email address so that you can grant a seat to someone outside of your view.
