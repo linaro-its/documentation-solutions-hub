@@ -4,7 +4,7 @@ Glossary
 ORGANISATION
 ------------
 
-A company that has been set up on the Solutions Hub. An organisation can have one or more *organisation administrators* who can create, update and delete users.
+An *organisation* is another way of describing a company that has been set up on the Solutions Hub. An organisation can have one or more *organisation administrators* who can create, update and delete users.
 
 PERSONAL ACCESS TOKEN
 ---------------------
@@ -16,7 +16,7 @@ A user can only have one PAT at a time. Authenticating with a PAT typically resu
 RESOURCE
 --------
 
-A resource is a reference to something that exists within a Solution. For example, in ONELab, a registered appliance is handled within SPIRE as a resource.
+A *resource* is a reference to something that exists within a subscription. For example, in ONELab, a registered appliance is handled within SPIRE as a resource.
 
 SEAT
 ----
@@ -51,9 +51,9 @@ Anyone can start a subscription, but the subscription does not become active unl
 SUBSCRIPTION PLAN
 -----------------
 
-Typically shortened to just **plan**, this defines the seats available for assignment. A plan may place a limit on how many seats can be assigned.
+Typically shortened to just **plan**, this defines the seats available for assignment. A plan may place a limit on how many seats can be assigned within a subscription.
 
 USER
 ----
 
-A user is an individual that has an account on the Solutions Hub. They can be an individual user, or an organisational user.
+A *user* is an individual that has an account on the Solutions Hub. They can be an individual user, or an organisational user. An organisational user can be managed by an organisation administrator.

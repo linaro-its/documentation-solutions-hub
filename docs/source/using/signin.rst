@@ -1,7 +1,7 @@
 Signing In
 ----------
 
-To sign in, click on the avatar icon in the top-right of the page and click on **Sign In**:
+To sign in, click on **Sign In / Sign Up**:
 
 .. image:: signin.png
     :scale: 50 %
