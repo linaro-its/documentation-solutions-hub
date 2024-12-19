@@ -5,4 +5,4 @@ The Solutions Hub is Linaro's central site for technical information and solutio
 
 From this one website, you can access public information such as test results from Linux Kernel Functional Testing and documentation for Linaro products and services.
 
-By signing up for a free account, it is then possible to take out a `subscription <glossary/index.html#subscription>`_ to a solution.
+By signing up for a free account, it is then possible to take out a `subscription <glossary#subscription>`_ to a solution.
