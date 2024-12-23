@@ -7,7 +7,7 @@ If you are a subscription administrator, you can:
 * Remove a *seat* from a user
 * Add *permissions* to an existing seat
 * Remove *permissions* from an existing seat [TODO]
-* Review who has seats, and corresponding permissions, on subscriptions [TODO]
+* Review who has seats on subscriptions
 
 This section of the documentation explains how this can be achieved with the SPIRE CLI tool.
 
