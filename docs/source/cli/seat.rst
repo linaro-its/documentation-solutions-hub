@@ -58,11 +58,11 @@ Flags:
 
 * ``-p`` or ``--permission``
 
-  Specifies a permission ID to grant. Flag can be used more than once.
+  Specifies a permission ID to grant. Multiple permissions can be provided, separated by commas.
 
 * ``-t`` or ``--target``
 
-  Specifies a target ID - either a subscription ID or a resource ID. Flag can be used more than once.
+  Specifies a target ID - either a subscription ID or a resource ID. If specifying resource IDs, multiple IDs can be provided, separated by commas.
 
 * ``-s`` or ``--seat``
 
