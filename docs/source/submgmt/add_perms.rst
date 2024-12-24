@@ -7,8 +7,8 @@ With the non-interactive method, all of the information required is passed on th
 
 ``spire seat add-permission -s <seat id> -t <target id>[, <target id>] -p <permission id>[, <permission id>]``
 
-Interactive assignment
-----------------------
+Interactive use
+---------------
 
 For any information needed to add permissions to a seat that is not provided as a parameter on the command line, the CLI tool will prompt for and provide a list of possible choices.
 
