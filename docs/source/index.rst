@@ -6,6 +6,7 @@ Linaro Solutions Hub
 
    overview
    using/index
+   support/index
    submgmt/index
    cli/index
    glossary/index
