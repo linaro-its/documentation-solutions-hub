@@ -1,19 +1,18 @@
 SPIRE CLI
 =========
 
-SPIRE is the technology behind Solutions Hub that manages the details for organisations, users, subscriptions, seats, resources and permissions.
+SPIRE is the technology behind Solutions Hub that manages the details for
+organisations, users, subscriptions, seats, resources and permissions.
 
-To help with the management of Solutions Hub while the web user interface is being built, and to facilitate the use of SPIRE from a CI environment, a CLI tool has been created.
+To help with the management of Solutions Hub while the web user interface is
+being built, and to facilitate the use of SPIRE from a CI environment, a CLI
+tool has been created.
 
-The tool is available for Windows, MacOS and Linux, all for both Intel and Arm processors.
+As with the web user interface, the CLI tool is under active development and
+the capabilities of the tool will be developed over time.
 
-As with the web user interface, the CLI tool is under active development and the capabilities of the tool will be developed over time.
-
-There are separate distributions for the CLI tool, depending on which SPIRE deployment you are interacting with:
-
-* Development: https://github.com/Linaro/SPIRE-CLI-D-/releases/tag/0.2.0-alpha%2B010
-* Staging: https://github.com/Linaro/SPIRE-CLI-S-/releases/tag/0.2.0-alpha%2B010
-* Production: https://github.com/Linaro/SPIRE-CLI/releases/tag/0.2.0-alpha%2B010
+Please read the :ref:`installation instructions<cli-installation>` for
+details on how to install the CLI tool.
 
 In the following documentation, each of the CLI commands is explained.
 
@@ -28,3 +27,8 @@ In the following documentation, each of the CLI commands is explained.
    org
    seat
    user
+
+.. toctree::
+   :hidden:
+
+   installation
