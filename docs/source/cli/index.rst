@@ -1,12 +1,13 @@
 SPIRE CLI
 =========
 
-SPIRE is the technology behind Solutions Hub that manages the details for
-organisations, users, subscriptions, seats, resources and permissions.
+SPIRE is the technology behind Linaro Solutions Hub that manages the
+details for organisations, users, subscriptions, seats, resources
+and permissions.
 
-To help with the management of Solutions Hub while the web user interface is
-being built, and to facilitate the use of SPIRE from a CI environment, a CLI
-tool has been created.
+To help with the management of Linaro Solutions Hub while the web user
+interface is being built, and to facilitate the use of SPIRE from a CI
+environment, a CLI tool has been created.
 
 As with the web user interface, the CLI tool is under active development and
 the capabilities of the tool will be developed over time.

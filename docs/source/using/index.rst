@@ -1,7 +1,15 @@
-Using the Solutions Hub
-=======================
+Getting Started with the Linaro Solutions Hub
+=============================================
 
-When you first go to the Solutions Hub, you will see the public, or "not-signed-in" page. It shows some informational widgets but, to interact more with Solutions Hub, you will need to :doc:`sign in <signin>` or, if you don't have an account, :doc:`sign up <signup>` for one first.
+If you're not logged in, what you are seeing is the Linaro Solutions
+Hub public page. The public view is great for a quick overview but,
+to unlock full access and start exploring tailored features, insights,
+and tools, simply `sign in </auth/signin>`_.
+
+Don't have an account yet? `Sign up </auth/signing>`_ to get started.
+
+If you need more information about these steps, please read the documentation
+referenced below:
 
 .. toctree::
     :maxdepth: 3
