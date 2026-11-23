@@ -25,8 +25,10 @@ In the following documentation, each of the CLI commands is explained.
    :maxdepth: 2
 
    auth
+   m2m-account
    org
    seat
+   service-account
    user
 
 .. toctree::

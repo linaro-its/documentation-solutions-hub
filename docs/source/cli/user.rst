@@ -58,21 +58,81 @@ If used in interactive mode, presents the user with a paginated list of users an
 
 If used in non-interactive mode or if ``--json`` is specified, the list of users is output in JSON format.
 
+.. _cli-user-pats:
+
+Personal access tokens
+----------------------
+
+Personal access tokens (PATs) let scripts and CI pipelines sign in with
+``spire auth token`` instead of a web browser login.
+
+* You can hold up to 15 unexpired tokens.
+* Each token has a name that is unique among your tokens, and expires no more
+  than 12 months after it is created.
+* A token can optionally be restricted to one subscription and/or one service.
+  Sessions created with a restricted token are limited to that scope.
+
+.. note:: PATs can only be created, listed or deleted after signing in with ``spire auth login``. A session obtained with ``spire auth token`` cannot manage PATs.
+
 ``spire user create-pat``
 -------------------------
 
-Creates a personal access token (PAT) for the authorised user. A user can only have one PAT at a time.
+Creates a personal access token for the authorised user.
 
-.. note:: An error will be generated if the PAT already exists.
+The token value is shown **once**, in the output of this command, and cannot
+be retrieved later. Store it somewhere safe straight away. Only the token
+value is written to standard output, so it can be captured directly, for
+example ``TOKEN=$(spire user create-pat --name ci --expires 6m)``. Details of
+the token are written to standard error.
 
-``spire user get-pat``
-----------------------
+Flags:
 
-Retrieves the personal access token for the authorised user.
+* ``--name`` (required)
 
-.. note:: An error will be generated if the PAT does not exist.
+  A name for the token, unique among your tokens.
+
+* ``--expires`` (required)
+
+  When the token expires, at most 12 months from now. This can be a duration
+  from now (``30d``, ``8w``, ``6m``, ``1y``), a date (``YYYY-MM-DD``, meaning
+  00:00 UTC on that day) or an RFC 3339 timestamp.
+
+* ``-s`` or ``--subscription``
+
+  Restrict the token to this subscription ID.
+
+* ``--service``
+
+  Restrict the token to this service ID.
+
+* ``--json``
+
+  Output the token together with its details in a JSON structure.
+
+.. note:: An error will be generated if you already have a token with the same name, or already hold 15 unexpired tokens.
+
+``spire user list-pats``
+------------------------
+
+Lists the authorised user's personal access tokens, newest first, showing each
+token's ID, name, hint (the first characters of the token), expiry, status and
+scope. Token values are never shown.
+
+Tokens marked ``legacy`` were created before multiple tokens were supported.
+
+The flag ``--json`` can be used to return the information in a JSON structure.
 
 ``spire user delete-pat``
 -------------------------
 
-Deletes the authorised user's personal access token if they have one.
+Deletes one of the authorised user's personal access tokens, identified by its
+ID, for example ``spire user delete-pat pat:<uuid>``. Run ``spire user
+list-pats`` to see the IDs.
+
+Deleting a token also ends any sessions that were created with it.
+
+``spire user get-pat``
+----------------------
+
+This command has been retired. Token values are no longer stored in a form
+that can be retrieved, so a token is only shown when it is created.
