@@ -37,6 +37,10 @@ Displays details of the authorised user or an alternative user if ``--user`` is 
 
 Flags:
 
+* ``-u`` or ``--user``
+
+  The ID of the user to display. Only available if the authorised user has permission to read other users.
+
 * ``--output``
 
   One of ``basic``, ``subs``, ``seats`` or ``perms``.
@@ -49,14 +53,24 @@ Flags:
 
   ``perms`` adds the details of any permissions in those seats.
 
+The flag ``--json`` can be used to return the information in a JSON structure.
+
 .. note:: If ``--json`` is specified, the output level will be ``subs``.
 
 ``spire user list``
 -------------------
 
-If used in interactive mode, presents the user with a paginated list of users and selecting a user will display that user's details as if ``user describe --perms`` had been used.
+Lists the users in an organisation.
 
-If used in non-interactive mode or if ``--json`` is specified, the list of users is output in JSON format.
+If used in interactive mode, presents the user with a paginated list of users and selecting a user will display that user's details as if ``user describe --output perms`` had been used.
+
+If used in non-interactive mode, the details of every user are displayed. If ``--json`` is specified, the list of users is output in JSON format.
+
+Flags:
+
+* ``-o`` or ``--organisation``
+
+  The ID of the organisation whose users are listed.
 
 .. _cli-user-pats:
 

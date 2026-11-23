@@ -10,10 +10,31 @@ expire.
 
 Authenticate using web browser login.
 
+``spire auth logout``
+---------------------
+
+Log out of the CLI, clearing the cached credentials.
+
 ``spire auth refresh``
 ----------------------
 
-Force a refresh of the access token and the authorization token.
+Force a refresh of the authentication token, the authorization cache and the
+authorization token. If any of the following flags are specified, only the
+corresponding items are refreshed.
+
+Flags:
+
+* ``--authn``
+
+  Refresh the authentication token.
+
+* ``--authz``
+
+  Refresh the authorization token.
+
+* ``--cache``
+
+  Refresh the authorization cache.
 
 ``spire auth status``
 ---------------------

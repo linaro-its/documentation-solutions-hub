@@ -19,6 +19,8 @@ In the following documentation, each of the CLI commands is explained.
 
 .. note:: The CLI will only enable the commands that are possible with the permissions in the authorization token.
 
+.. note:: Run ``spire --check-version`` to check whether a newer version of the CLI tool is available.
+
 .. note:: The documented commands always reference ``spire``. This should be changed to ``dev-spire`` or ``staging-spire`` if required.
 
 .. toctree::
@@ -29,6 +31,7 @@ In the following documentation, each of the CLI commands is explained.
    org
    seat
    service-account
+   sub
    user
 
 .. toctree::
