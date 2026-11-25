@@ -5,6 +5,8 @@ Linaro Solutions Hub
    :maxdepth: 2
 
    using/index
+   settings/index
+   admin/index
    support/index
    submgmt/index
    cli/index

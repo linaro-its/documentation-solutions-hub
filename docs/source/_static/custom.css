@@ -1,0 +1,12 @@
+/* Give screenshots that end a list item the same spacing as a paragraph.
+   Scaled images are wrapped in a link to the full-size file. */
+.rst-content li > img:last-child,
+.rst-content li > a.image-reference:last-child > img {
+    margin-bottom: 24px;
+}
+
+/* Sphinx writes a fixed height for scaled images; keep the aspect ratio when
+   the theme narrows a wide screenshot to fit the content column. */
+.rst-content img {
+    height: auto !important;
+}
