@@ -23,17 +23,14 @@ Signing Up for a New Account
          :scale: 50 %
          :alt: Create Your Account screen
 
-3. If you are offered a passkey, click on **Create a passkey** to use one,
-   or **Continue without passkeys** to use a password instead.
-
-4. Choose a password and click on **Continue**. The screen lists the rules
+3. Choose a password and click on **Continue**. The screen lists the rules
    your password must meet:
 
    .. image:: signup-3.png
        :scale: 50 %
        :alt: Create Your Account screen with a password entered and the Continue button highlighted
 
-5. Enter your **Given name** and **Family name** and click on **Continue**:
+4. Enter your **Given name** and **Family name** and click on **Continue**:
 
    .. image:: signup-4.png
        :scale: 50 %
