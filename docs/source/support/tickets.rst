@@ -48,7 +48,9 @@ From a ticket you can:
 
 * Add a comment or attachment in **Activity**, then click on **Post**.
 * Change the ticket's status, if any options are listed under **Status**
-  (for example "Resolve this issue").
+  (for example "Resolve this issue"). Click on the option and confirm it in
+  the dialog that opens. Which options appear depends on the ticket's
+  current status; a resolved ticket may have none.
 * Use **Grant Support Access** under **Support Data Access** to let Linaro
   Support see the data in your subscription while they work on the ticket.
   Once access has been granted, you can revoke it from the same place.
