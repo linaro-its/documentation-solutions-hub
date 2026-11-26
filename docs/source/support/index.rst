@@ -1,10 +1,10 @@
-Need Help? We're Here for You
-=============================
+.. _support-index:
 
-This section shows you how to request support, report issues,
-and manage your support tickets - including how to track progress,
-respond to updates, and stay connected with our team every step
-of the way.
+Getting Support
+===============
+
+This section shows you how to ask for help, report problems with the
+Linaro Solutions Hub, and follow and reply to your support tickets.
 
 .. toctree::
     :maxdepth: 3

@@ -10,10 +10,31 @@ expire.
 
 Authenticate using web browser login.
 
+``spire auth logout``
+---------------------
+
+Log out of the CLI, clearing the cached credentials.
+
 ``spire auth refresh``
 ----------------------
 
-Force a refresh of the access token and the authorization token.
+Force a refresh of the authentication token, the authorization cache and the
+authorization token. If any of the following flags are specified, only the
+corresponding items are refreshed.
+
+Flags:
+
+* ``--authn``
+
+  Refresh the authentication token.
+
+* ``--authz``
+
+  Refresh the authorization token.
+
+* ``--cache``
+
+  Refresh the authorization cache.
 
 ``spire auth status``
 ---------------------
@@ -24,28 +45,41 @@ produce a table showing the permissions in the authorization token.
 ``spire auth token``
 --------------------
 
-Authenticate using a personal access token (PAT). See ``spire user create-pat`` for how to create one.
+Authenticate using a :ref:`personal access token<cli-user-pats>`.
 
-Flags:
+The email address and token can be given with flags or environment variables.
+Environment variables avoid exposing the token in process listings and shell
+history.
 
-* ``--email``
+* ``--email`` or ``SPIRE_EMAIL``
 
-  The user's email address. Can also be set with the ``SPIRE_EMAIL`` environment variable.
+  The email address of the account the token belongs to. For a
+  :doc:`service account<service-account>` or an
+  :doc:`M2M account<m2m-account>`, this is the account's email address.
 
-* ``--pat``
+* ``--pat`` or ``SPIRE_PAT``
 
-  The personal access token. Can also be set with the ``SPIRE_PAT`` environment variable.
+  The personal access token.
 
-* ``--subscription`` or ``-s``
+The session can optionally be narrowed to a subscription and/or a service:
 
-  Limits the session to one subscription, given by its ID. Can also be set with the ``SPIRE_SUBSCRIPTION`` environment variable.
+* ``-s``, ``--subscription`` or ``SPIRE_SUBSCRIPTION``
 
-* ``--service``
+  The ID of the subscription.
 
-  Limits the session to one service, given by its ID. Can also be set with the ``SPIRE_SERVICE`` environment variable.
+* ``--service`` or ``SPIRE_SERVICE``
 
-Using the environment variables avoids exposing the token in process listings and shell history.
+  The ID of the service.
 
-If the token is restricted to a subscription or service, that restriction is always applied. Requesting a different subscription or service than the token allows produces an error.
+If the token itself is restricted, its own scope is always applied, and
+requesting a different subscription or service is refused.
+
+For example:
+
+.. code-block:: bash
+
+   export SPIRE_EMAIL=user@example.com
+   export SPIRE_PAT='<token>'
+   spire auth token
 
 .. note:: A session obtained with ``spire auth token`` cannot create, list or delete personal access tokens. Use ``spire auth login`` for that.

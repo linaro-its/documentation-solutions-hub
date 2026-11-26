@@ -67,7 +67,7 @@ to remove a manager:
 
 Managers then create the service account's access tokens on their
 :doc:`Managed Accounts </settings/managed-accounts>` page. They can also use
-the :doc:`SPIRE CLI </cli/index>`.
+the :doc:`SPIRE CLI </cli/service-account>`.
 
 Changing or deleting a service account
 --------------------------------------

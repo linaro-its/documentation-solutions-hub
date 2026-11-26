@@ -22,9 +22,9 @@ processor architecture and package format.
 For Debian-based operating systems, there is a ``.deb`` file. This can be
 installed using the following command:
 
-```bash
-sudo dpkg -i <file>.deb
-```
+.. code-block:: bash
+
+    sudo dpkg -i <file>.deb
 
 After installation, you can run the CLI tool with ``spire``.
 
