@@ -24,17 +24,17 @@ In the following documentation, each of the CLI commands is explained.
 .. note:: The documented commands always reference ``spire``. This should be changed to ``dev-spire`` or ``staging-spire`` if required.
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
 
-   auth
-   m2m-account
-   org
-   seat
-   service-account
-   sub
-   user
+    auth
+    m2m-account
+    org
+    seat
+    service-account
+    sub
+    user
 
 .. toctree::
-   :hidden:
+    :hidden:
 
-   installation
+    installation

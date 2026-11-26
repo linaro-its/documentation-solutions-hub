@@ -1,52 +1,73 @@
+.. _using-signin:
+
 Signing In
-----------
+==========
 
-To sign in, click on **Sign In / Sign Up**:
+1. Click on **Sign In / Sign Up** in the top-right of the page:
 
-.. image:: signin.png
+   .. image:: signin-1.png
+       :scale: 50 %
+       :alt: Top navigation bar with Sign In / Sign Up highlighted
+
+2. Choose how to sign in:
+
+   * If you have a Linaro Solutions Hub account, or your organisation has an
+     arrangement with Linaro to use its own sign-in system, enter your email
+     address and click on **Continue**:
+
+     .. image:: signin-2.png
+         :scale: 50 %
+         :alt: Welcome screen with an email address entered and the Continue button highlighted
+
+   * If you have a Google account, click on **Continue with Google**.
+   * If you have set up a passkey, click on **Continue with a passkey**.
+   * If you don't have an account yet, click on **Sign up**; see
+     :doc:`signup`.
+
+   If your organisation uses its own sign-in system, you are taken there.
+   Sign in as usual and you will be returned to the Linaro Solutions Hub.
+
+3. Enter your password and click on **Continue**:
+
+   .. image:: signin-3.png
+       :scale: 50 %
+       :alt: Enter Your Password screen
+
+   To use a different email address, click on **Edit**.
+
+Some of these steps may not appear if you have signed in recently.
+
+If you have forgotten your password
+-----------------------------------
+
+1. On the password screen, click on **Reset password**:
+
+   .. image:: signin-4.png
+       :scale: 50 %
+       :alt: Enter Your Password screen with Reset password highlighted
+
+   You can also click on **Can't log in to your account?** on the first
+   screen.
+
+2. Check your email address and click on **Continue**:
+
+   .. image:: signin-5.png
+       :scale: 50 %
+       :alt: Forgot Your Password screen
+
+3. Follow the link in the email you receive to choose a new password.
+
+.. note::
+
+   You only receive an email if the address matches an account. If you still
+   can't sign in, see :doc:`/support/asking`.
+
+Signing out
+-----------
+
+Click on your name in the top-right of the page and then click on **Sign
+Out**:
+
+.. image:: signout-1.png
     :scale: 50 %
-
-You will then go through the signing-in process, which can vary depending on
-whether or not you've used the Hub recently. Some of the following steps may
-not appear, or the screenshots may differ slightly.
-
-.. image:: signin-1.png
-    :scale: 50 %
-
-At this screen, you have three choices:
-
-1. If you already have a Linaro Solutions Hub account **or** if your
-   organisation has an arrangement with Linaro to use their own authentication
-   platform, enter your email address and click on **Continue**.
-
-2. If you have a Google account, click on **Continue with Google** to
-   authenticate with that account.
-
-3. Otherwise, click on **Sign up** to create a new account.
-
-If your organisation has an arrangement with Linaro, your browser will redirect
-to your company's authentication platform. Sign in there as usual. After that,
-you will be redirected back to the Linaro Solutions Hub.
-
-If you already have a Linaro Solutions Hub account, you will be prompted to
-enter your password:
-
-.. image:: signin-2.png
-    :scale: 50 %
-
-Enter your password and click on **Continue**. If your email address and
-password match the records, you will be taken back to the Linaro Solutions Hub.
-
-If you have mistyped your email address or want to use a different email
-address, click on **Edit** to go back to the previous screen.
-
-If you have forgotten your password, click on **Forgot password?**. You
-will be prompted to enter an email address:
-
-.. image:: forgotten-password.png
-    :scale: 50%
-
-Click on **Continue**.
-
-.. note:: You will only receive an email if the email address provided matches an account on the system.
-
+    :alt: User menu with Sign Out highlighted

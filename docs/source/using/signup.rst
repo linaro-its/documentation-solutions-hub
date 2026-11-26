@@ -1,42 +1,58 @@
-Sign Up For A New Account
--------------------------
+.. _using-signup:
 
-After clicking on **Sign up**, the screen will change slightly but you still
-have three choices:
+Signing Up for a New Account
+============================
 
-1. If you have a Google account, click on **Continue with Google** to
-   authenticate with that account.
+1. Click on **Sign In / Sign Up** in the top-right of the page, then click on
+   **Sign up**:
 
-2. If you already have a Linaro Solutions Hub account **or** if your
-   organisation has an arrangement with Linaro to use their own authentication
-   platform, click on **Log in** to sign in with that account.
+   .. image:: signup-1.png
+       :scale: 50 %
+       :alt: Welcome screen with the Sign up link highlighted
 
-3. Otherwise, enter the email address you want to use with Linaro Solutions Hub
-   and click on **Continue**. You will then be asked to enter a password of
-   your own choice. Do so and click on **Continue**. You will then see a form
-   asking for additional information:
+2. Choose how to sign up:
 
-.. image:: additional-info.png
-    :scale: 50 %
+   * To use a Google account, click on **Continue with Google**.
+   * If you already have an account, or your organisation has an arrangement
+     with Linaro to use its own sign-in system, click on **Log in** instead;
+     see :doc:`signin`.
+   * Otherwise, enter the email address you want to use and click on
+     **Continue**:
 
-.. note:: At this point, you should have received an email asking you to verify your email address. It is **strongly** recommended that you click on the verification link now, before you finish signing up for your Solutions Hub account.
+     .. image:: signup-2.png
+         :scale: 50 %
+         :alt: Create Your Account screen
 
-If you have been following step #3 above, and you've filled in the additional
-information and clicked **Continue** without verifying your email address
-first, the web page will display a banner message like this:
+3. Choose a password and click on **Continue**.
+
+4. Fill in the additional information and click on **Continue**:
+
+   .. image:: additional-info.png
+       :scale: 50 %
+       :alt: Form asking for additional information about you
+
+.. note::
+
+   You will receive an email asking you to verify your email address. It is
+   **strongly** recommended that you click on the link in that email before
+   you finish signing up.
+
+If you haven't verified your email address
+------------------------------------------
+
+Until you verify your email address, the Hub shows this message and you
+won't have full access:
 
 .. image:: unverified.png
     :scale: 50 %
+    :alt: Message saying that your email address is unverified, with a Resend Verification Email button
 
-If you are seeing this message, you need to follow these steps:
+To finish setting up your account:
 
-1. Find the verification email and click on the link. If you cannot find the
-   email, click on the **Resend Verification Email** button and then follow
-   these instructions.
-2. Click on the avatar icon in the top-right of the page and then click
-   on **Sign Out**.
+1. Find the verification email and click on the link in it. If you can't
+   find it, click on **Resend Verification Email**.
 
-.. image:: signout.png
-    :scale: 50 %
+2. Click on your name in the top-right of the page and then click on **Sign
+   Out**.
 
-1. Click on **Sign In / Sign Up** and, this time, go through the `Sign In process <signin>`_ since you have now created your account.
+3. :doc:`Sign in <signin>` again.

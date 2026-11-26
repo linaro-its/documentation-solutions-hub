@@ -7,7 +7,7 @@ Linaro Solutions Hub
    using/index
    settings/index
    admin/index
-   support/index
    submgmt/index
+   support/index
    cli/index
    glossary/index

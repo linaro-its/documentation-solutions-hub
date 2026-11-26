@@ -1,71 +1,107 @@
+.. _support-asking:
+
 Asking for Help
 ===============
 
-There are a few ways that you can ask for help and the most appropriate way
-will depend on why you want to create a support ticket.
+How you ask for help depends on whether you can sign in to the Linaro
+Solutions Hub. This page covers help with the Hub itself and with your
+subscriptions. Some solutions, such as ONELab, have their own ways of asking
+for help; see the documentation for that solution.
 
-It should be understood that the following section focuses on how you can ask
-for help with regards to the Linaro Solutions Hub itself. Solutions such as
-ONELab may have additional ways of asking for help and documentation for
-those solutions should be checked for that information.
+If you can't sign in or sign up
+-------------------------------
 
-Unable to sign in
------------------
+1. Click on **Support** on the top navigation bar:
 
-If you are unable to sign into the Linaro Solutions Hub with your email
-address, please click on **Support** (on the top navigation bar) and then
-click on **Unable to sign in**:
+   .. image:: asking-1.png
+       :scale: 50 %
+       :alt: Top navigation bar, signed out, with Support highlighted
 
-.. image:: unable_to_sign_in.png
-    :scale: 50 %
+2. Click on **Unable to sign in** or **Unable to sign up**:
 
-It is important that you provide your correct email address when you fill
-in this form otherwise you will not receive any updates via email and it
-will not be possible to investigate the problem you are having.
+   .. image:: asking-2.png
+       :scale: 50 %
+       :alt: Support page with the Unable to sign in link highlighted
 
-Unable to sign up
------------------
+3. Fill in the form and click on **Submit**:
 
-If you are unable to sign up - or create - an account for use with the Linaro
-Solutions Hub, please click on **Support** (on the top navigation bar) and
-then click on **Unable to sign up**:
+   .. image:: asking-3.png
+       :scale: 50 %
+       :alt: Unable to sign in form
 
-.. image:: unable_to_sign_up.png
-    :scale: 50 %
+   For **Unable to sign in**, choose how you normally sign in under **How
+   are you trying to authenticate?**: **Email address and password** or
+   **Google**.
 
-It is important that you provide your correct email address when you fill in
-this form otherwise you will not receive any updates via email and it will
-not be possible to investigate the problem you are having.
+.. note::
 
-General website problem or bug
+   Enter your email address correctly. Updates about your request are only
+   sent by email, and Support can't investigate the problem without it.
+
+Reporting a problem with the website
+------------------------------------
+
+If something on the Linaro Solutions Hub isn't working, and it isn't about a
+subscription's content or services:
+
+1. Scroll to the bottom of any page and click on **Report a problem or bug**:
+
+   .. image:: asking-4.png
+       :scale: 50 %
+       :alt: Page footer with Report a problem or bug highlighted
+
+2. Describe the problem, add any screenshots or other attachments that help,
+   and click on **Submit**:
+
+   .. image:: asking-5.png
+       :scale: 50 %
+       :alt: Report website problem or bug form
+
+   If you aren't signed in, the form also asks for your **Email address**.
+   Enter it correctly so that you receive updates.
+
+Asking for help when signed in
 ------------------------------
 
-If you are having a problem with the Linaro Solutions Hub that does not seem
-to be specific to a subscription's content or services, such as ONELab, please
-scroll to the bottom of the page and click on **Report website problem or
-bug**:
+Use **Ask for help** for a question or problem about one of your
+subscriptions, or about the Hub in general, including suggestions.
 
-.. image:: website_problem.png
-    :scale: 50 %
+1. Click on **Support** on the top navigation bar and then click on **Ask
+   for help**:
 
-Please provide as much information as possible, including screenshots or other
-relevant attachments.
+   .. image:: asking-6.png
+       :scale: 50 %
+       :alt: Support menu with Ask for help highlighted
 
-If you are accessing this form anonymously (i.e. not signed in), you will see
-a field to enter your email address. It is important that you provide your
-correct email address otherwise you will not receive any updates via email and
-it will not be possible to investigate the problem you are having.
+2. Under **I need help with**, choose the subscription your request is
+   about, or **Solutions Hub** if it isn't about a subscription:
 
-General ask for help
---------------------
+   .. image:: asking-7.png
+       :scale: 50 %
+       :alt: Select Support Area step with a subscription highlighted
 
-If you are signed in, the Support option will be a menu, of which the first
-option will be **Ask for help**. If you have a suggestion about the Linaro
-Solutions Hub, or you are having a problem that is **not** related to a
-subscription, you can choose this option to request help:
+3. Click on **Next**:
 
-.. image:: ask_for_help.png
-    :scale: 50 %
+   .. image:: asking-8.png
+       :scale: 50 %
+       :alt: Select Support Area step with the Next button highlighted
 
-Please provide as much information as possible, including screenshots or
-other relevant attachments.
+4. Enter a **Summary** and a **Description**, and add any attachments. If
+   you chose a subscription, say whether Linaro Support may access the data
+   in it to help you. Then click on **Submit**:
+
+   .. image:: asking-9.png
+       :scale: 50 %
+       :alt: Provide Details step with the Submit button highlighted
+
+   You can change this choice later from the ticket; see
+   :doc:`tickets`.
+
+5. When the request has been created, click on **View Ticket** to see it:
+
+   .. image:: asking-10.png
+       :scale: 50 %
+       :alt: Request created message with the View Ticket button highlighted
+
+Your subscription administrator can let other people see every ticket raised
+for a subscription; see :doc:`/submgmt/support-shared-access`.

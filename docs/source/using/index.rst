@@ -1,18 +1,17 @@
+.. _using-index:
+
 Getting Started with the Linaro Solutions Hub
 =============================================
 
-If you're not logged in, what you are seeing is the Linaro Solutions
-Hub public page. The public view is great for a quick overview but,
-to unlock full access and start exploring tailored features, insights,
-and tools, simply `sign in </auth/signin>`_.
-
-Don't have an account yet? `Sign up </auth/signin>`_ to get started.
-
-If you need more information about these steps, please read the documentation
-referenced below:
+If you aren't signed in, you see the Linaro Solutions Hub public pages. They
+give an overview of the solutions on offer, and you can read the
+:doc:`Library <library>`. To use your subscriptions, :doc:`sign in <signin>`;
+if you don't have an account yet, :doc:`sign up <signup>`.
 
 .. toctree::
     :maxdepth: 3
 
     signin
     signup
+    home
+    library

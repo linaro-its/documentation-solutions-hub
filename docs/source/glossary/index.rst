@@ -1,12 +1,41 @@
 Glossary
 ========
 
+COLLABORATOR
+------------
+
+A *collaborator* is someone who can view and comment on every support ticket
+raised under a subscription, not just their own. Subscription administrators
+choose the collaborators; see :doc:`/submgmt/support-shared-access`.
+
+GROUP
+-----
+
+A *group* is a named set of users in an organisation. Giving a group a seat
+gives that seat to everyone in the group. A **Normal Group** contains the
+people you choose; an **Org-Sync Group** always contains everyone in the
+organisation. See :doc:`/admin/groups`.
+
 ORGANISATION
 ------------
 
 An *organisation* is another way of describing a company that has been
 set up on the Linaro Solutions Hub. An organisation can have one or
 more *organisation administrators* who can create, update and delete users.
+
+PERMISSION
+----------
+
+A *permission* specifies something that the user is allowed to do, such
+as creating a user.
+
+Permissions are granted to users via seats (see SEAT below). Permissions can be
+targeted at:
+
+* the subscription, in which case the operation granted by that permission
+  can be carried out on any appropriate resource within the subscription
+* one or more resources, in which case the operation granted by that
+  permission can only be carried out against the specified resource(s).
 
 PERSONAL ACCESS TOKEN
 ---------------------
@@ -52,19 +81,12 @@ same subscription. On the other hand, if the seat only has permissions
 targeting resources, then adding new permissions will also need those to
 target resources *but* they do not need to be the same resources.
 
-PERMISSION
-----------
+SERVICE ACCOUNT
+---------------
 
-A *permission* specifies something that the user is allowed to do, such
-as creating a user.
-
-Permissions are granted to users via seats (see above). Permissions can be
-targeted at:
-
-* the subscription, in which case the operation granted by that permission
-  can be carried out on any appropriate resource within the subscription
-* one or more resources, in which case the operation granted by that
-  permission can only be carried out against the specified resource(s).
+A *service account* is a non-human account in an organisation, for example
+for a CI system. It cannot sign in; its managers create personal access
+tokens for it instead. See :doc:`/admin/service-accounts`.
 
 SUBSCRIPTION
 ------------
