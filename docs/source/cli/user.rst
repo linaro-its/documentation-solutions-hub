@@ -37,6 +37,10 @@ Displays details of the authorised user or an alternative user if ``--user`` is 
 
 Flags:
 
+* ``-u`` or ``--user``
+
+  The ID of the user to display. Only available if the authorised user has permission to read other users.
+
 * ``--output``
 
   One of ``basic``, ``subs``, ``seats`` or ``perms``.
@@ -49,73 +53,108 @@ Flags:
 
   ``perms`` adds the details of any permissions in those seats.
 
+The flag ``--json`` can be used to return the information in a JSON structure.
+
 .. note:: If ``--json`` is specified, the output level will be ``subs``.
 
 ``spire user list``
 -------------------
 
-If used in interactive mode, presents the user with a paginated list of users and selecting a user will display that user's details as if ``user describe --perms`` had been used.
+Lists the users in an organisation.
 
-If used in non-interactive mode or if ``--json`` is specified, the list of users is output in JSON format.
+If used in interactive mode, presents the user with a paginated list of users and selecting a user will display that user's details as if ``user describe --output perms`` had been used.
+
+If used in non-interactive mode, the details of every user are displayed. If ``--json`` is specified, the list of users is output in JSON format.
+
+Flags:
+
+* ``-o`` or ``--organisation``
+
+  The ID of the organisation whose users are listed.
+
+.. _cli-user-pats:
+
+Personal access tokens
+----------------------
+
+Personal access tokens (PATs) let scripts and CI pipelines sign in with
+``spire auth token`` instead of a web browser login.
+
+* You can hold up to 15 unexpired tokens.
+* Each token has a name that is unique among your tokens, and expires no more
+  than 12 months after it is created.
+* A token can optionally be restricted to one subscription and/or one service.
+  Sessions created with a restricted token are limited to that scope.
+
+.. note:: PATs can only be created, listed or deleted after signing in with ``spire auth login``. A session obtained with ``spire auth token`` cannot manage PATs.
 
 ``spire user create-pat``
 -------------------------
 
-Creates a personal access token (PAT) for the authorised user. A user can hold up to 15 unexpired PATs.
+Creates a personal access token for the authorised user. A user can hold up to
+15 unexpired tokens.
+
+The token value is shown **once**, in the output of this command, and cannot
+be retrieved later. Store it somewhere safe straight away. Only the token
+value is written to standard output, so it can be captured directly, for
+example ``TOKEN=$(spire user create-pat --name ci --expires 6m)``. Details of
+the token are written to standard error.
 
 Flags:
 
 * ``--name`` (required)
 
-  A name for the token. It must be unique among the user's tokens.
+  A name for the token, unique among your tokens.
 
 * ``--expires`` (required)
 
-  When the token expires, at most 12 months from now. Accepts a duration from now (``30d``, ``8w``, ``6m``, ``1y``), a date (``YYYY-MM-DD``, meaning 00:00 UTC on that day) or an RFC 3339 timestamp such as ``2026-12-31T17:00:00Z``.
+  When the token expires, at most 12 months from now. This can be a duration
+  from now (``30d``, ``8w``, ``6m``, ``1y``), a date (``YYYY-MM-DD``, meaning
+  00:00 UTC on that day) or an RFC 3339 timestamp such as
+  ``2026-12-31T17:00:00Z``.
 
-* ``--subscription`` or ``-s``
+* ``-s`` or ``--subscription``
 
-  Restricts the token to one subscription, given by its ID.
+  Restrict the token to this subscription ID.
 
 * ``--service``
 
-  Restricts the token to one service, given by its ID.
+  Restrict the token to this service ID.
 
 * ``--json``
 
-  Outputs the token together with its details in JSON format.
+  Output the token together with its details in a JSON structure.
 
-Only the token value is written to standard output, so it can be captured directly, for example ``TOKEN=$(spire user create-pat --name ci --expires 6m)``.
-
-.. warning:: The token value is shown only once, when it is created. It cannot be retrieved later, so store it securely straight away. If it is lost, delete the token and create a new one.
-
-.. note:: An error will be generated if a token with the same name already exists or if the user already holds 15 unexpired tokens.
+.. note:: An error will be generated if you already have a token with the same name, or already hold 15 unexpired tokens.
 
 ``spire user list-pats``
 ------------------------
 
-Lists the authorised user's personal access tokens, newest first. For each token, it shows the ID, name, hint (the first characters of the token), expiry date, status and scope. Token values are never shown.
+Lists the authorised user's personal access tokens, newest first, showing each
+token's ID, name, hint (the first characters of the token), expiry, status and
+scope. Token values are never shown.
 
-The status is ``active``, ``expired`` or ``legacy``. Legacy tokens were created before users could hold more than one token.
+The status is ``active``, ``expired`` or ``legacy``. Tokens marked ``legacy``
+were created before multiple tokens were supported.
 
-Flags:
-
-* ``--json``
-
-  Outputs the list in JSON format.
+The flag ``--json`` can be used to return the information in a JSON structure.
 
 ``spire user delete-pat``
 -------------------------
 
-Deletes one of the authorised user's personal access tokens, given by its ID, for example ``spire user delete-pat pat:<uuid>``. Use ``spire user list-pats`` to find the ID.
+Deletes one of the authorised user's personal access tokens, identified by its
+ID, for example ``spire user delete-pat pat:<uuid>``. Run ``spire user
+list-pats`` to see the IDs.
 
-Deleting a token also ends any sessions that were created with it. Once deleted, the token cannot be used or restored.
+Deleting a token also ends any sessions that were created with it. Once
+deleted, the token cannot be used or restored.
 
-.. note:: An error will be generated if no token with that ID belongs to the user.
+.. note:: An error will be generated if no token with that ID belongs to you.
 
 ``spire user get-pat``
 ----------------------
 
-This command has been retired. Personal access tokens can no longer be retrieved after they are created. Use ``spire user list-pats`` to see your tokens or ``spire user create-pat`` to create a new one.
+This command has been retired. Token values are no longer stored in a form
+that can be retrieved, so a token is only shown when it is created.
 
 .. note:: The ``create-pat``, ``list-pats`` and ``delete-pat`` commands only work after authenticating with ``spire auth login``. They cannot be used in a session obtained with ``spire auth token``.
