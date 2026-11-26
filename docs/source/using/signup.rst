@@ -23,13 +23,21 @@ Signing Up for a New Account
          :scale: 50 %
          :alt: Create Your Account screen
 
-3. Choose a password and click on **Continue**.
+3. If you are offered a passkey, click on **Create a passkey** to use one,
+   or **Continue without passkeys** to use a password instead.
 
-4. Fill in the additional information and click on **Continue**:
+4. Choose a password and click on **Continue**. The screen lists the rules
+   your password must meet:
 
-   .. image:: additional-info.png
+   .. image:: signup-3.png
        :scale: 50 %
-       :alt: Form asking for additional information about you
+       :alt: Create Your Account screen with a password entered and the Continue button highlighted
+
+5. Enter your **Given name** and **Family name** and click on **Continue**:
+
+   .. image:: signup-4.png
+       :scale: 50 %
+       :alt: Please provide additional information form with the Continue button highlighted
 
 .. note::
 
@@ -40,12 +48,12 @@ Signing Up for a New Account
 If you haven't verified your email address
 ------------------------------------------
 
-Until you verify your email address, the Hub shows this message and you
-won't have full access:
+Until you verify your email address, your home page shows only this message
+and you won't have full access:
 
-.. image:: unverified.png
+.. image:: signup-5.png
     :scale: 50 %
-    :alt: Message saying that your email address is unverified, with a Resend Verification Email button
+    :alt: Message saying that your email address is unverified, with the Resend Verification Email button highlighted
 
 To finish setting up your account:
 

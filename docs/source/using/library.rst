@@ -29,6 +29,6 @@ Library. Click on a result to open that page:
 
 .. image:: library-3.png
     :scale: 50 %
-    :alt: Library search box with results for the word password
+    :alt: Library search box with results for access token
 
 Click on the **×** in the search box to clear it.
