@@ -37,6 +37,21 @@ Signing In
 
 Some of these steps may not appear if you have signed in recently.
 
+Accepting updated terms
+-----------------------
+
+If you haven't yet accepted the current Privacy Policy and Terms &
+Conditions, you are asked to accept them after you sign in. This also
+happens whenever they are updated.
+
+Read the **Privacy Policy** and **Terms & Conditions** (the links open in a
+new tab or window), tick **I agree to the Privacy Policy and Terms &
+Conditions**, and click on **Continue**:
+
+.. image:: signup-6.png
+    :scale: 50 %
+    :alt: Screen asking you to accept the updated terms, with the agreement ticked and the Continue button highlighted
+
 If you have forgotten your password
 -----------------------------------
 
