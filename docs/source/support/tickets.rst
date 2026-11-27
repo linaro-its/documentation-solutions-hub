@@ -47,10 +47,23 @@ From a ticket you can:
       :alt: Ticket page with Show details highlighted
 
 * Add a comment or attachment in **Activity**, then click on **Post**.
-* Change the ticket's status, if any options are listed under **Status**
-  (for example "Resolve this issue"). Click on the option and confirm it in
-  the dialog that opens. Which options appear depends on the ticket's
-  current status; a resolved ticket may have none.
+* Change the ticket's status, if any options are listed under **Status**.
+  For example, to close a ticket you no longer need help with, click on
+  **Resolve this issue**:
+
+  .. image:: tickets-6.png
+      :scale: 50 %
+      :alt: Ticket page with the Resolve this issue option under Status highlighted
+
+  Then click on **Ok** to confirm:
+
+  .. image:: tickets-7.png
+      :scale: 50 %
+      :alt: Resolve this issue dialog with the Ok button highlighted
+
+  Which options appear depends on the ticket's current status; a resolved
+  ticket may have none.
+
 * Use **Grant Support Access** under **Support Data Access** to let Linaro
   Support see the data in your subscription while they work on the ticket.
   Once access has been granted, you can revoke it from the same place.

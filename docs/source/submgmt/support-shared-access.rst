@@ -53,13 +53,30 @@ Adding collaborators
        :scale: 50 %
        :alt: Add collaborator page with a user ticked and the Add 1 collaborator button highlighted
 
+You return to **Support Ticket Shared Access**, where the people you added
+are listed:
+
+.. image:: shared-access-5.png
+    :scale: 50 %
+    :alt: Collaborators table listing one active collaborator
+
+If someone is already a collaborator, the Add collaborator page shows
+**Already a member** and nothing changes.
+
 Removing collaborators
 ----------------------
 
-1. In the **Collaborators** table, tick each person you want to remove.
+1. In the **Collaborators** table, tick each person you want to remove, then
+   click on **Remove selected** *(n)*:
 
-2. Click on **Remove selected** *(n)*.
+   .. image:: shared-access-6.png
+       :scale: 50 %
+       :alt: Collaborators table with one collaborator ticked and the Remove selected (1) button highlighted
 
-3. Click on **Remove** to confirm.
+2. Check the email addresses in the dialog, then click on **Remove**:
+
+   .. image:: shared-access-7.png
+       :scale: 50 %
+       :alt: Remove collaborator dialog with the Remove button highlighted
 
 Removed collaborators may lose access to the subscription's support tickets.

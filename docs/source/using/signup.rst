@@ -34,7 +34,17 @@ Signing Up for a New Account
 
    .. image:: signup-4.png
        :scale: 50 %
-       :alt: Please provide additional information form with the Continue button highlighted
+       :alt: Please provide the following additional information form with the Continue button highlighted
+
+5. Read the **Privacy Policy** and **Terms & Conditions** (the links open in
+   a new tab or window), tick **I agree to the Privacy Policy and Terms &
+   Conditions**, and click on **Continue**:
+
+   .. image:: signup-6.png
+       :scale: 50 %
+       :alt: Screen asking you to accept the updated terms, with the agreement ticked and the Continue button highlighted
+
+   You can't continue until you tick the box.
 
 .. note::
 
